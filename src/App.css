@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1.2vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    background: linear-gradient(180deg, #373E44 0%, #191B1F 100%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.empty_canvas{
+    background-color: #616161;
+    border: #96BEE7 solid 1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tabs_widget, .gallery_widget{
+    width: 100%;
+    height: 93%;
+    background-color: #424850a2;
+    box-shadow: 5.67px 5.67px 3.78px 0px rgba(0, 0, 0, 0.4);
 }
-
-.App-link {
-  color: #61dafb;
+.tabs_box , .gallery_box{
+    width: 95%;
 }
+.icons_box{
+    padding: 3% 0 5% 0;
+}
+.question_image{
+    height: 18%;
+    width: 53%;
+}
+.windows_image{
+    height: 23%;
+    width: 53%;
+}
+.rectangle_1{
+    width: 84%;
+    height: 2%;
+}
+.rectangle_2{
+    width: 84%;
+    height: 2%;
+    position: relative;
+    top: 6%;
+}
+.rectangle{
+    background: linear-gradient(180deg, #282828 0%, rgba(255, 255, 255, 0.05) 50%, #535353 100%);
+    box-shadow: 0px 4px 4px 0px #00000054;
+    backdrop-filter: blur(9.84px);
+}
+/* //////////////  TABS COMPONENT  //////////////// */
+.button_bar{
+    background-color: rgba(0, 0, 0, 0.61);
+    color: #A3ADB2;
+    box-shadow: inset 0px 4.96px 12.4px 2.48px rgba(0, 0, 0, 0.25);
+}
+.text_box{
+    height: 56%;
+    margin-top: 4%;
+    color: #969696;
+    overflow: hidden;
+    padding-right: 2%;
+}
+.btn{
+    width: 32.5%;
+}
+.simplebar-scrollbar:before {
+    width: 0.5vw; /* Change the thickness of the scrollbar */
+    /* background-color: rgb(141, 137, 137) !important; */
+    background: linear-gradient(135deg, #aaacac 0%, #4A4E54 100%) !important;
+    box-shadow: 4px 4px 4.9px 0px rgba(0, 0, 0, 0.25);
+}
+.active{
+    background-color: #28292F;
+    color: white;
+    transition: 0.2s;
+    box-shadow: 
+        -8.43px -16.87px 50px -16.87px #485B71,
+        -8.43px -16.87px 50px -16.87px #485B71,
+        13.49px 16.87px  50px -8.43px #0A0A0A,
+        13.49px 16.87px  50px -8.43px #0A0A0A;
+}
+/*///////////  GALLERY COMPONENT  ///////////// */
+.gallery_header_box{
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 23%;
+    color: white;
+    box-shadow: inset 0px 4.96px 12.4px 2.48px rgba(0, 0, 0, 0.25);
+}
+.gallery_photos{
+    margin-top: 4%;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.gallery_buttons{
+    width: 47%;
+}
+.add_img_btn{
+    color: white;
+    background-color: #ffffff05;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding-bottom: 1%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    box-shadow: 
+    -0.5px -0.5px 6.9px 0px rgba(255, 255, 255, 0.25),
+    9px 10px 7.1px 0px rgba(0, 0, 0, 0.4),
+    
+    inset 0px 0px 48.91px 0px rgba(255, 255, 255, 0.05),
+    inset 0px 3.26px 3.26px 0px rgba(255, 255, 255, 0.15);
+}
+span{
+    font-size: 1rem;
+}
+.arrows_btns_box{
+    width: 36%;
+}
+.arrows_btns_box button{
+    background: linear-gradient(45deg, #292b2e 0%, #161718 100%);
+    box-shadow: 
+        -5px -3px 30px -10px #96BEE7,
+        4px 5px 30px 5px #101213;
+
+}
+.arrows_btns_box button:hover{
+    background: linear-gradient(45deg, #292b2e 0%, #3a3d3f 100%);
+    border: solid rgb(48, 47, 47) 1px;
+}
+.arrows_btns_box img {
+    height: 40%;
+    width: 40%;
+}
+.image_container{
+    min-width: 31%;
+    max-width: 31%;
+    background-image: url('img.jpg');
+    background-size: cover;
+    margin-right: 3.5%;
+    height: 22vh;
+    overflow: hidden;
 }
